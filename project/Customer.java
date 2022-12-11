@@ -38,5 +38,4 @@ public class Customer {
     public void setDlNumber(String dlNumber) { this.dlNumber = dlNumber; }
     
     public void setPostalCode(String postalCode) { this.postalCode = postalCode; }
-
 }
