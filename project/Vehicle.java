@@ -2,6 +2,7 @@ package project;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -10,7 +11,7 @@ import javax.persistence.Table;
 public class Vehicle {
        
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.AUTO)
     int id;
      
     String make;
@@ -37,7 +38,4 @@ public class Vehicle {
     public void setType(String type) { this.type = type; }
     
     public void setYear(int year) { this.year = year; }
-    
-    
-    
 }

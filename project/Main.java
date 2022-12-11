@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class ProfileServiceApplication extends SpringBootServletInitializer {
+public class Main extends SpringBootServletInitializer {
 
 
 //    @Bean
@@ -23,6 +23,6 @@ public class ProfileServiceApplication extends SpringBootServletInitializer {
 
     public static void main(String[] args) {
         String[] args2 = new String[] { "--debug" };
-        SpringApplication.run(ProfileServiceApplication.class, args);
+        SpringApplication.run(Main.class, args);
     }
 }

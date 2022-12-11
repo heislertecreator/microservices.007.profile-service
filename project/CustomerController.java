@@ -7,12 +7,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping(value="/services")
-public class ProfileController {
+public class CustomerController {
     
     @Autowired
     CustomerService customerService;
     
-    @RequestMapping(value = "/profile", method = RequestMethod.POST)
+    @RequestMapping(value = "/customer", method = RequestMethod.POST)
     public Customer save(@RequestBody Customer customer) {
         return customerService.save(customer);
     }
